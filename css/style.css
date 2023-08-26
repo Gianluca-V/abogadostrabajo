@@ -354,6 +354,7 @@ a {
     background-color: var(--secondary);
     color: white;
     flex-direction: column;
+    padding-bottom: 3rem;
 }
 
 .contact__data-container {
