@@ -13,6 +13,10 @@
     text-decoration: none;
     font-family: 'Didact Gothic', sans-serif;
 }
+body{
+    background-color: var(--background);
+    color:var(--text);
+}
 
 a{
     color:inherit;
@@ -77,6 +81,7 @@ a{
 .home__background{
     filter: contrast(110%) saturate(120%);
     max-width: 100%;
+    width: 100%;
 }
 .home__background-container{
     position: relative;
@@ -188,6 +193,7 @@ a{
 .working-areas__name{
     font-size: clamp(1rem,2vw,1.3rem);
     color: var(--text);
+    font-weight: 700;
 }
 
 .working-areas__description{
@@ -288,7 +294,7 @@ a{
         gap: 1rem;
         border: 1px solid var(--accent);
         overflow: hidden;
-        transition: a.33s ease;
+        transition: max-width .25s ease, height .25s ease;
     }
     .working-areas__div.active{
         max-height: 100%;
