@@ -335,18 +335,88 @@ a{
     
 }
 
-
-.contact{
-
-}
+/* Formulario de contacto  */
+  
 .contact__title, .contact__title *{
+    flex: 1; 
     text-align: center;
     font-size: 3rem;
     font-family: 'Playfair Display', serif;
     margin-block: 3rem;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #bd805c;
+  color: white;
+  flex-direction: column;
+}
+
+.contact__data-container {
+  display: flex;
+}
+
+.contact__form {
+    padding: 40px;
+    border-radius: 10px;
+    
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin-right: 20px; 
+}    
+  
+.secondary {
+  color: #b82828;
+}
+
+.form__group {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+}
+
+.form__submit {
+  background-color: #b82828;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form__submit:hover {
+  background-color: #8c1c1c;
+}
+
+.contact__data {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.address, .tel {
+  margin-bottom: 10px;
+}
+
 iframe{
     width: 100%;
     max-width: 100%;
 }
+
+
