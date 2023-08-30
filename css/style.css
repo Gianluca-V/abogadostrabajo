@@ -487,4 +487,7 @@ iframe {
     width: 80%;
     max-width: 80%;
     margin: auto;
+    position: center;
 }
+
+
