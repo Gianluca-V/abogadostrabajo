@@ -22,4 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     });
+
+    const navLinks = document.querySelectorAll(".nav__li a");
+    navLinks.forEach(link => {
+      link.addEventListener("click",()=>{
+          let id = link.getAttribute('id');
+          document.querySelector("#"+id.slice(2,id.length)).scrollIntoView();
+      })
+  })
+
+  document.querySelector(".nav__toggle").addEventListener("click",()=>{
+    document.querySelector(".nav__ul").classList.toggle("nav__ul--active");
   });
+});
